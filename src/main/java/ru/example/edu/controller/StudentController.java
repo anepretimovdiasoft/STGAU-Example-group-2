@@ -30,7 +30,6 @@ public class StudentController {
         for (Student student : studentList) {
             if (student.getId() == id) return student;
         }
-
         return null;
     }
 
