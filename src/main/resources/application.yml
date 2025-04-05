@@ -2,6 +2,14 @@ server:
   port: 8081
 
 spring:
+  #h2
+#  datasource:
+#    url: jdbc:h2:mem:testdb
+#
+#  h2:
+#    console:
+#      #enabled: false
+#      enabled: true
 
   #postgres
   datasource:
