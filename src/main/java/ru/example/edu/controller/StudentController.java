@@ -33,4 +33,15 @@ public class StudentController {
     public void deleteStudentById(@PathVariable long id) {
         repository.deleteById(id);
     }
+
+    @PutMapping("/student/{id}")
+    public Student updateStudent(@PathVariable long id, @RequestBody Student st) {
+        Student student = repository.findById(id).get();
+
+        student.setName(st.getName());
+        student.setAge(st.getAge());
+        student.setEmail(st.getEmail());
+
+        return repository.save(student);
+    }
 }

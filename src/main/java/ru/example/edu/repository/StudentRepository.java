@@ -6,5 +6,4 @@ import ru.example.edu.model.Student;
 
 @Repository
 public interface StudentRepository extends JpaRepository<Student, Long> {
-
 }
